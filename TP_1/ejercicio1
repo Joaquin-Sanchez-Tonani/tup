@@ -1,0 +1,7 @@
+#!/bin/bash
+#Leer un mensaje predeterminado y luego el mensaje ingresado
+
+echo "Buenas noches"
+echo "Ingresar palabra"
+read mensaje
+echo $mensaje

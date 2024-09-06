@@ -1,0 +1,16 @@
+#!/bin/bash
+# Itera hasta que la variable tenga 0 caracteres(null), en el proceso le recorta a la cadena 1 en la ultima posicion. Luego con el acumulador sabemos el tamaño de la palabra
+# (-n) No esta vacio/Not null
+# (palabra:INICIO:FIN) En este caso recorta 1 en el final de la cadena.
+
+echo "Ingrese palabra a contar"
+read palabra
+palabraGuardada=$palabra
+acumulador=0
+while [ -n $palabra ];do
+	palabra=${palabra::-1}
+	acumulador=$((acumulador + 1))
+done
+echo "El tamaño de ${palabraGuardada} es de: ${acumulador} caracteres"
+	
+

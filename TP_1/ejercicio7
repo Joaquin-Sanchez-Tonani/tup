@@ -1,0 +1,14 @@
+#!/bin/bash
+# Convertir frase en minuscula y verificar que la frase ingresada tenga mayusculas
+
+echo "Ingrese una palabra"
+read palabra
+lowercase=${palabra,,}	
+for i in $(seq 0 ${#palabra})
+do
+	if [[ ${palabra:$i:1} != ${lowercase:$i:1}  ]];then
+		echo "Palabra ingresada contiene mayusculas"
+		break
+	fi
+done
+echo "Palabra en minuscula: ${lowercase}"

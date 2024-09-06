@@ -1,0 +1,21 @@
+#!/bin/bash
+# Informa el resultado de las operaciones aritmeticas de dos numeros ingresados
+
+echo "Ingresar el primer numero"
+read numero1
+echo "Ingresar el segundo numero"
+read numero2
+
+suma=$((numero1+numero2))
+resta=$((numero1-numero2))
+division=$((numero1/numero2))
+multiplicacion=$((numero1*numero2))
+potenciaNum1=$((numero1*numero1))
+potenciaNum2=$((numero2*numero2))
+
+echo "Suma: ${suma}"
+echo "Resta: ${resta}"
+echo "Division: ${division}"
+echo "Multiplicacion: ${multiplicacion}"
+echo "Potencia al cuadrado del ${numero1}: ${potenciaNum1}"
+echo "Potencia al cuadrado del ${numero2}: ${potenciaNum2}"

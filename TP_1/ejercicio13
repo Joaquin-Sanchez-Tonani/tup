@@ -1,0 +1,15 @@
+#!/bin/bash
+# Validar usuario y contraseña, solo la contraseña debe ser identica(mayus o minus).
+
+usuario_a_validar="joaquinsanchez"
+contrasena_a_validar="jOAqUIn"
+echo "Ingresar usuario"
+read usuario
+echo "Ingresar contraseña"
+read contrasena
+usuario=${usuario,,}
+if [[ $usuario == $usuario_a_validar && $contrasena == $contrasena_a_validar  ]];then
+	echo "Haz ingresado correctamente"
+else
+	echo "Datos incorrectos"
+fi

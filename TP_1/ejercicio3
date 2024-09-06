@@ -1,0 +1,8 @@
+#!/bin/bash
+
+echo "Ingresar fecha 1"
+read fecha1
+echo "Ingresar fecha 2"
+read fecha2
+diasTranscurridos=$(($fecha2 - $fecha1))
+echo $diasTranscurridos

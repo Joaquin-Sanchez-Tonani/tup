@@ -1,0 +1,10 @@
+#!/bin/bash
+# Valida si el numero ingresado es par o impar
+
+echo "Ingrese un numero"
+read numero
+if (( numero % 2 == 0 )); then
+	echo "Es par"
+else
+	echo "Es impar"
+fi

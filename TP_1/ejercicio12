@@ -1,0 +1,14 @@
+#!/bin/bash
+# Informa calificacion segun nota ingresada "I/B/MB/E"
+
+echo "Ingrese nota"
+read nota
+if ((nota < 6));then
+	echo "I: Irregular.(${nota})"
+elif ((nota >= 6 && nota < 8));then
+	echo "B: Bien.(${nota})"
+elif ((nota >= 8 && nota < 10));then
+	echo "MB: Muy bien.(${nota})"
+else 
+	echo "E: Excelente.(${nota})"
+fi

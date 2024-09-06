@@ -1,0 +1,12 @@
+#!/bin/bash
+# Informa cual es el numero mayor y cual el menor
+
+echo "Ingresa el primer numero"
+read numero1
+echo "Ingresa el segundo numero"
+read numero2
+if ((numero1 > numero2));then
+	echo "El mayor es ${numero1} y el menor es ${numero2}"
+else
+	echo "El mayor es ${numero2} y el menor es ${numero1}"
+fi 

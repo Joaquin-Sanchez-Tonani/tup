@@ -1,0 +1,23 @@
+#!/bin/bash
+# Informa la palabra de mayor longitud que ingresa el usuario
+# ! sirve para el indice del array, # es para length() y @ o * es para "TODOS"
+
+echo "Ingresar primer palabra"
+read palabra1
+echo "Ingresar segundo palabra"
+read palabra2
+echo "Ingresar tercer palabra"
+read palabra3
+echo "Ingresar cuarto palabra"
+read palabra4
+echo "Ingresar quinto palabra"
+read palabra5
+mayor=""
+arrayPalabras=($palabra1 $palabra2 $palabra3 $palabra4 $palabra5)
+for i in ${!arrayPalabras[@]}
+do
+	if ((${#arrayPalabras[i]} > ${#mayor}));then
+		mayor=${arrayPalabras[i]}
+	fi
+done
+echo "La palabra ${mayor} es la de mayor longitud"

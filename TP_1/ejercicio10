@@ -1,0 +1,17 @@
+#!/bin/bash
+# Informa el promedio de los 5 numeros ingresados por el usuario
+
+echo "Ingresar primer numero"
+read numero1
+echo "Ingresar segundo numero"
+read numero2
+echo "Ingresar tercer numero"
+read numero3
+echo "Ingresar cuarto numero"
+read numero4
+echo "Ingresar quinto numero"
+read numero5
+
+suma=$((numero1+numero2+numero3+numero4+numero5))
+promedio=$((suma/5))
+echo "El promedio es de: ${promedio}"

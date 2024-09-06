@@ -1,0 +1,6 @@
+#!/bin/bash
+# Crear un archivo vacio con el nombre ingresado + un texto predeterminado + .txt
+
+echo "Ingrese nombre del archivo"
+read nombre
+touch "${nombre}_textopredeterminado.txt"
